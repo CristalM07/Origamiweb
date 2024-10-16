@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+            text-align: center;
+            color: #333;
+            font-size: 18px;
+            background-color: rgb(207, 247, 255); /* Website main background color */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Banner CSS */
+        .banner {
+            background-image: url('paperdreams.jpeg'); /* Path to your banner image */
+            background-size: cover; /* Ensure the image covers the entire div */
+            background-position: center;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds text shadow */
+        }
+
+        /* Nav Bar CSS */
+        nav {
+            margin: 0;
+        }
+  
+        .Navbar {
+            display: flex; 
+            justify-content: center;
+            overflow: hidden;
+            background-color: rgb(178, 227, 238);  /* Nav bar color */
+        }
+  
+        .Navbar a {
+            color: #80aa91;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+  
+        .Navbar a:hover {
+            background-color: #befcfa;
+            color: #fff;
+        }
+
+        /* Tutorial Step CSS */
+        .tutorial-step {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .step-image {
+            width: 100%;
+            border: 2px solid #80aa91;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .step-text {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #555;
+        }
+
+        .step-title {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Step Navigation Buttons */
+        .step-navigation {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-button {
+            background-color: #80aa91;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .nav-button:hover {
+            background-color: #befcfa;
+        }
+        .step-image {
+    width: 60%; /* Adjust to a smaller size */
+    max-width: 400px; /* Sets a maximum width */
+    border: 2px solid #80aa91;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 auto; /* Center the image */
+}
+ /* Responsive Design - Media Queries */
+ @media (max-width: 768px) {
+            .banner {
+                font-size: 2rem;
+                height: 25vh;
+            }
+
+            .Navbar a {
+                padding: 10px;
+                font-size: 1rem;
+            }
+
+            .step-title {
+                font-size: 1.25rem;
+            }
+
+            .step-text {
+                font-size: 1rem;
+            }
+
+            .step-image {
+                width: 80%; /* Reduce image size on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner {
+                font-size: 1.5rem;
+                height: 20vh;
+            }
+
+            .Navbar {
+                flex-direction: column;
+            }
+
+            .Navbar a {
+                padding: 8px;
+                font-size: 0.875rem;
+            }
+
+            .step-title {
+                font-size: 1rem;
+            }
+
+            .step-text {
+                font-size: 0.875rem;
+            }
+
+            .step-image {
+                width: 100%; /* Ensure image fits in smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Banner -->
+    <div class="banner">
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="Navbar">
+            <a class="Home" href="Media.html">Home</a>
+            <a class="Easy" href="Easy.html">Easy</a>
+            <a class="Medium" href="Medium.html">Medium</a>
+            <a class="Expert" href="Hard.html">Expert</a>
+        </div>
+    </nav>
+
+    <!-- Origami Tutorial Content -->
+
+    <!-- Step 1 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 1: Prepare Your Paper</div>
+        <img class="step-image" src="M1S1.png" alt="Step 1 Image">
+        <div class="step-text">
+            Start with a square sheet of paper. Fold it in half vertically and then unfold.
+
+        </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 2: Make the First Fold</div>
+        <img class="step-image" src="M1S2.png" alt="Step 2 Image">
+        <div class="step-text">
+            Fold the paper horizontally, creating a crease in the middle, and unfold.
+        </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 3: Create Creases</div>
+        <img class="step-image" src="M1S3.png" alt="Step 3 Image">
+        <div class="step-text">
+            Fold the paper vertically again, bringing one side over to meet the other.
+        </div>
+    </div>
+   
+    <!-- Step 4 -->
+     <div class="tutorial-step">
+        <div class="step-title">Step 4: Create Creases</div>
+        <img class="step-image" src="M1S4.png" alt="Step 4 Image">
+        <div class="step-text">
+            Fold the top two corners of the rectangle down diagonally, forming two triangle flaps on each side.
+        </div>
+    </div>
+
+     <!-- Step 5 -->
+     <div class="tutorial-step">
+        <div class="step-title">Step 5: Create Creases</div>
+        <img class="step-image" src="M1S5.png" alt="Step 5 Image">
+        <div class="step-text">
+            Open and flatten these triangles by pressing down on their centers, creating two smaller triangles at the top.
+        </div>
+    </div>
+    
+    <!-- Step 6 -->
+     <div class="tutorial-step">
+        <div class="step-title">Step 6: Create Creases</div>
+        <img class="step-image" src="M1S6.png" alt="Step 6 Image">
+        <div class="step-text">
+            Fold the bottom half of the paper upward so it covers part of the triangles, forming a small rectangle below the triangles.
+        </div>
+    </div>
+</body>
+</html>
+ <!-- Step 6 -->
+ <div class="tutorial-step">
+    <div class="step-title">Step 7: Create Creases</div>
+    <img class="step-image" src="M1S7.png" alt="Step 6 Image">
+    <div class="step-text">
+        Fold the edges of this rectangle inward, meeting at the center, forming two small triangles at the bottom.
+    </div>
+</div> <!-- Step 6 -->
+<div class="tutorial-step">
+   <div class="step-title">Step 8: Create Creases</div>
+   <img class="step-image" src="M1S8.png" alt="Step 6 Image">
+   <div class="step-text">
+    Fold the lower portion of the rectangle up again, covering the triangles.
+   </div>
+</div> <!-- Step 6 -->
+<div class="tutorial-step">
+   <div class="step-title">Step 9: Create Creases</div>
+   <img class="step-image" src="M1S9.png" alt="Step 6 Image">
+   <div class="step-text">
+    Fold the bottom corners of this flap diagonally upward, creating the frog’s legs.
+   </div>
+</div> <!-- Step 6 -->
+<div class="tutorial-step">
+   <div class="step-title">Step 10: Create Creases</div>
+   <img class="step-image" src="M1S10.png" alt="Step 6 Image">
+   <div class="step-text">
+    Fold the legs and sides inward and adjust the pleats to create a small spring mechanism for jumping.
+</div> <!-- Step 6 -->
+<div class="tutorial-step">
+   <div class="step-title">Step 11: Create Creases</div>
+   <img class="step-image" src="M1S11.png" alt="Step 6 Image">
+   <div class="step-text">
+    Press the frog down slightly on its back to test the spring. Your frog is ready to jump!
+   </div>
+
+
