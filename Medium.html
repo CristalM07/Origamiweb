@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expert</title>
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+      }
+
+      body { 
+          text-align: center;
+          color: #ffffff;
+          font-size: 130%;
+          background-color: rgb(207, 247, 255); /* Website main background colour */
+      }
+
+  /* Banner CSS starts here */
+  .banner {
+    background-image: url('paperdreams.jpeg'); /* Path to your banner image */
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 200px; /* Adjust the height as needed */
+    color: #ffffff; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; /* Adjust the font size as needed */
+    width: 100%;
+}
+
+
+      /* Nav Bar CSS */
+      nav {
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+      }
+    
+      .Navbar {
+          display: flex; 
+          justify-content: center;
+          overflow: hidden;
+          background-color: rgb(178, 227, 238);  /* Nav bar color */
+      }
+    
+      .Navbar a {
+          float: left;
+          color: #80aa91; /* Text color for buttons */
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+      }
+    
+      .Navbar a:hover {
+          background-color: #befcfa;  /* Hover color for buttons */
+          color: rgb(255, 255, 255); /* Text color on hover */
+      }
+
+      /* Container for clickable images */
+      .image-container {
+          display: flex;
+          justify-content: center;
+          gap: 30px; /* Adds space between the images */
+          margin-top: 20px;
+      }
+
+      .image-container a {
+          text-decoration: none; /* Remove underline */
+      }
+
+      /* Styling for images */
+      .image-container img {
+          width: 300px; /* Set width of the image */
+          height: 300px; /* Set height to make it square */
+          object-fit: cover; /* Ensures the image covers the area without distortion */
+          border: 2px solid #80aa91; /* Optional border */
+          border-radius: 10px; /* Optional rounded corners */
+      }
+    
+     /* Responsive Design */
+     @media (max-width: 768px) {
+        .banner {
+            height: 150px; /* Smaller banner for mobile */
+        }
+
+        .Navbar a {
+            padding: 10px 12px; /* Reduce padding for mobile */
+            font-size: 15px;
+        }
+
+        .image-container {
+            flex-direction: column; /* Stack images vertically on mobile */
+        }
+
+        .image-container img {
+            width: 80%; /* Adjust image size for mobile */
+        }
+      }
+  </style>
+</head>
+<body>
+<div class="banner">
+</div>
+
+<nav>
+  <div class="Navbar">
+    <a class="Home" href="index.html">Home</a>
+    <a class="Easy" href="Easy.html">Easy</a>
+    <a class="Medium" href="Medium.html">Medium</a>
+    <a class="Expert" href="Hard.html">Expert</a>
+  </div>
+</nav>
+
+ <!-- Image container with 4 clickable images and text -->
+ <div class="image-container">
+  <div class="image-box">
+    <a href="MediumTutorial1.html">
+      <img src="M1Image.png" alt="Clickable Image 1">
+    </a>
+
+    <div class="image-text">Tutorial 1</div>
+  </div>
+  <div class="image-box">
+    <a href="MediumTutorial2.html">
+      <img src="M2Image.png" alt="Clickable Image 2">
+    </a>
+    <div class="image-text">Tutorial 2</div>
+  </div>
+  <div class="image-box">
+    <a href="MediumTutorial3.html">
+      <img src="M3Image.png" alt="Clickable Image 3">
+    </a>
+
+    <div class="image-text">Tutorial 3</div>
+  </div>
+  <div class="image-box">
+    <a href="MediumTutorial4.html">
+      <img src="M4Image.png" alt="Clickable Image 4">
+    </a>
+    
+    <div class="image-text">Tutorial 4</div>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
