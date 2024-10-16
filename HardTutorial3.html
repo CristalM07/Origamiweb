@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+            text-align: center;
+            color: #333;
+            font-size: 18px;
+            background-color: rgb(207, 247, 255); /* Website main background color */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Banner CSS */
+        .banner {
+            background-image: url('paperdreams.jpeg'); /* Path to your banner image */
+            background-size: cover; /* Ensure the image covers the entire div */
+            background-position: center;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds text shadow */
+        }
+
+        /* Nav Bar CSS */
+        nav {
+            margin: 0;
+        }
+  
+        .Navbar {
+            display: flex; 
+            justify-content: center;
+            overflow: hidden;
+            background-color: rgb(178, 227, 238);  /* Nav bar color */
+        }
+  
+        .Navbar a {
+            color: #80aa91;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+  
+        .Navbar a:hover {
+            background-color: #befcfa;
+            color: #fff;
+        }
+
+        /* Tutorial Step CSS */
+        .tutorial-step {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .step-image {
+            width: 100%;
+            border: 2px solid #80aa91;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .step-text {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #555;
+        }
+
+        .step-title {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Step Navigation Buttons */
+        .step-navigation {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-button {
+            background-color: #80aa91;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .nav-button:hover {
+            background-color: #befcfa;
+        }
+        .step-image {
+    width: 60%; /* Adjust to a smaller size */
+    max-width: 400px; /* Sets a maximum width */
+    border: 2px solid #80aa91;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 auto; /* Center the image */
+}
+    /* Responsive Design - Media Queries */
+    @media (max-width: 768px) {
+            .banner {
+                font-size: 2rem;
+                height: 25vh;
+            }
+
+            .Navbar a {
+                padding: 10px;
+                font-size: 1rem;
+            }
+
+            .step-title {
+                font-size: 1.25rem;
+            }
+
+            .step-text {
+                font-size: 1rem;
+            }
+
+            .step-image {
+                width: 80%; /* Reduce image size on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner {
+                font-size: 1.5rem;
+                height: 20vh;
+            }
+
+            .Navbar {
+                flex-direction: column;
+            }
+
+            .Navbar a {
+                padding: 8px;
+                font-size: 0.875rem;
+            }
+
+            .step-title {
+                font-size: 1rem;
+            }
+
+            .step-text {
+                font-size: 0.875rem;
+            }
+
+            .step-image {
+                width: 100%; /* Ensure image fits in smaller screens */
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Banner -->
+    <div class="banner">
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="Navbar">
+            <a class="Home" href="Media.html">Home</a>
+            <a class="Easy" href="Easy.html">Easy</a>
+            <a class="Medium" href="Medium.html">Medium</a>
+            <a class="Expert" href="Hard.html">Expert</a>
+        </div>
+    </nav>
+
+    <!-- Origami Tutorial Content -->
+
+    <!-- Step 1 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 1: Base Folds </div>
+        <img class="step-image" src="H3S1.png" alt="Step 1 Image">
+        <div class="step-text">
+            Start with a square piece of paper. Fold and unfold diagonally in both directions to create an “X” crease. Then, fold the sides to the center, forming a diamond shape (rabbit-ear fold on both sides).
+        </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 2: First Triangle Shape</div>
+        <img class="step-image" src="H3S2.png" alt="Step 2 Image">
+        <div class="step-text">
+            Complete the rabbit ear fold on both sides, then repeat the fold for the other flap. You now have a fish base.
+        </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 3:Form the Ears</div>
+        <img class="step-image" src="H3S3.png" alt="Step 3 Image">
+        <div class="step-text">
+            Mountain fold one flap behind, fold the other flap behind as well. Fold the tip behind, and then fold both corners behind the structure.
+        </div>
+    </div>
+     <!-- Step 3 -->
+     <div class="tutorial-step">
+        <div class="step-title">Step 4: Shape the Face</div>
+        <img class="step-image" src="Spareh3.png" alt="Step 3 Image">
+        <div class="step-text">
+            Fold the entire structure in half. Fold the flaps outward to shape the ears. Repeat the same fold for the other flap.
+        </div>
+    </div>
+   
+    <!-- Step 4 -->
+     <div class="tutorial-step">
+        <div class="step-title">Step 5: Finish the Bunny</div>
+        <img class="step-image" src="H3S4.png" alt="Step 4 Image">
+        <div class="step-text">
+            Push open the flaps to shape both ears. Perform reverse folds on the front (for the nose) and the back (for the tail). The mouse is complete!
+        </div>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+            text-align: center;
+            color: #333;
+            font-size: 18px;
+            background-color: rgb(207, 247, 255); /* Website main background color */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+  /* Banner CSS starts here */
+  .banner {
+    background-image: url('paperdreams.jpeg'); /* Path to your banner image */
+    background-size: cover; /* Ensure the image covers the entire div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 200px; /* Adjust the height as needed */
+    color: #ffffff; /* Text color */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px; /* Adjust the font size as needed */
+    width: 100%;
+}
+
+        /* Nav Bar CSS */
+        nav {
+            margin: 0;
+        }
+  
+        .Navbar {
+            display: flex; 
+            justify-content: center;
+            overflow: hidden;
+            background-color: rgb(178, 227, 238);  /* Nav bar color */
+        }
+  
+        .Navbar a {
+            color: #80aa91;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+  
+        .Navbar a:hover {
+            background-color: #befcfa;
+            color: #fff;
+        }
+
+        /* Tutorial Step CSS */
+        .tutorial-step {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .step-image {
+            width: 100%;
+            border: 2px solid #80aa91;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .step-text {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #555;
+        }
+
+        .step-title {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Step Navigation Buttons */
+        .step-navigation {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-button {
+            background-color: #80aa91;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .nav-button:hover {
+            background-color: #befcfa;
+        }
+        .step-image {
+    width: 60%; /* Adjust to a smaller size */
+    max-width: 400px; /* Sets a maximum width */
+    border: 2px solid #80aa91;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 auto; /* Center the image */
+}
+ /* Responsive Design - Media Queries */
+ @media (max-width: 768px) {
+            .banner {
+                font-size: 2rem;
+                height: 25vh;
+            }
+
+            .Navbar a {
+                padding: 10px;
+                font-size: 1rem;
+            }
+
+            .step-title {
+                font-size: 1.25rem;
+            }
+
+            .step-text {
+                font-size: 1rem;
+            }
+
+            .step-image {
+                width: 80%; /* Reduce image size on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner {
+                font-size: 1.5rem;
+                height: 20vh;
+            }
+
+            .Navbar {
+                flex-direction: column;
+            }
+
+            .Navbar a {
+                padding: 8px;
+                font-size: 0.875rem;
+            }
+
+            .step-title {
+                font-size: 1rem;
+            }
+
+            .step-text {
+                font-size: 0.875rem;
+            }
+
+            .step-image {
+                width: 100%; /* Ensure image fits in smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Banner -->
+    <div class="banner">
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="Navbar">
+            <a class="Home" href="Media.html">Home</a>
+            <a class="Easy" href="Easy.html">Easy</a>
+            <a class="Medium" href="Medium.html">Medium</a>
+            <a class="Expert" href="Hard.html">Expert</a>
+        </div>
+    </nav>
+
+    <!-- Origami Tutorial Content -->
+
+    <!-- Step 1 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 1: Start with the Frog Base</div>
+        <img class="step-image" src="H1S1.png" alt="Step 1 Image">
+        <div class="step-text">
+            Begin from the frog base (standard origami base). You should have a diamond-like shape.
+        </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 2: Open the Tip </div>
+        <img class="step-image" src="H1S2.png" alt="Step 2 Image">
+        <div class="step-text">
+            Lift the top tip of the frog base and open it upwards, creating a taller triangular shape..
+        </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 3:Repeat Step 2 Three More Times</div>
+        <img class="step-image" src="H1S3.png" alt="Step 3 Image">
+        <div class="step-text">
+            Perform the same action on the other three sides of the model, opening the tips upwards.
+        </div>
+    </div>
+   
+    <!-- Step 4 -->
+     <div class="tutorial-step">
+        <div class="step-title">Step 4: Fold a Flap to the Left</div>
+        <img class="step-image" src="H1S4.png" alt="Step 4 Image">
+        <div class="step-text">
+            Fold one of the flaps over to the left side
+        </div>
+    </div>
+
+     <!-- Step 5 -->
+     <div class="tutorial-step">
+        <div class="step-title">Step 5: Fold the Edges to the Center</div>
+        <img class="step-image" src="H1S5.png" alt="Step 5 Image">
+        <div class="step-text">
+            Fold the left and right edges of the model toward the central axis to narrow the shape.
+
+        </div>
+    </div>
+    
+    <!-- Step 6 -->
+     <div class="tutorial-step">
+        <div class="step-title">Step 6: Repeat Step 5 Three More Times</div>
+        <img class="step-image" src="H1S6.png" alt="Step 6 Image">
+        <div class="step-text">
+            Repeat the same fold on the remaining three sides, bringing the edges to the center.
+        </div>
+    </div>
+    <!-- Step 7 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 7:Pinch and Fold the Tip</div>
+        <img class="step-image" src="H1S7.png" alt="Step 6 Image">
+        <div class="step-text">
+            Pinch the tip of the model and fold it downwards, pressing and flattening it along the side.
+        </div>
+    </div>
+    <!-- Step 8 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 8: Repeat Step 7 Three More Times</div>
+        <img class="step-image" src="H1S8.png" alt="Step 6 Image">
+        <div class="step-text">
+            Perform this action on the other three sides, pinching and folding the tip down.
+        </div>
+    </div>
+    <!-- Step 9 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 9:Fold the Edges to the Center Again</div>
+        <img class="step-image" src="H1S9.png" alt="Step 6 Image">
+        <div class="step-text">
+            Fold the side edges toward the center axis once again to refine the shape.
+        </div>
+    </div>
+    <!-- Step 10 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 10: Repeat Step 9 Three More Times</div>
+        <img class="step-image" src="H1S10.png" alt="Step 6 Image">
+        <div class="step-text">
+            Repeat this fold for the other three sides, narrowing the structure further.
+        </div>
+    </div>
+    <var><!-- Step 11 -->
+        <div class="tutorial-step">
+           <div class="step-title">Step 11: Flower Shape after Step 10</div>
+           <img class="step-image" src="H1S11.png" alt="Step 6 Image">
+           <div class="step-text">
+            After completing step 10, your model should now take on the appearance of a flower base with all sides folded inward.
+           </div>
+       </div>
+    v<!-- Step 12 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 12:Final Shaping of Petals</div>
+        <img class="step-image" src="H1H12.png" alt="Step 6 Image">
+        <div class="step-text">
+            For each petal, pull the outer edges apart while guiding the tip upwards or downwards as you prefer to form the final petal shapes.
+        </div>
+    </div></var>
+</body>
+</html>

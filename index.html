@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+            text-align: center;
+            color: #ffffff;
+            font-size: 130%;
+            background-color: rgb(207, 247, 255); /* Website main background colour */
+        }
+
+        /* Banner CSS */
+        .banner {
+            background-image: url(/Users/cristalmiranda/Desktop/Tech/paperdreams.jpeg); /* Path to your banner image */
+            background-size: cover; /* Ensure the image covers the entire div */
+            background-repeat: no-repeat;
+            background-position: center; /* Center the image */
+            height: 200px; /* Adjust the height as needed */
+            color: #ffffff; /* Text color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px; /* Adjust the font size as needed */
+            width: 100%;
+        }
+
+        /* Nav Bar CSS */
+        nav {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .Navbar {
+            display: flex; 
+            justify-content: center;
+            overflow: hidden;
+            background-color: rgb(178, 227, 238); /* This is the colour of the nav bar */
+        }
+
+        .Navbar a {
+            color: #80aa91; /* Text colour for buttons */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .Navbar a:hover {
+            background-color: #befcfa; /* Colour on hover */
+            color: rgb(255, 255, 255); /* Text colour on hover */
+        }
+
+        /* What Origami Is CSS */
+        .whatisit {
+            color: #80aa91; /* About us text font colour */
+            padding: 30px 10px;
+            background-color: rgb(207, 247, 255); /* About us background box colour */
+        }
+
+        .whatisit {
+            display: flex;
+            color: #80aa91;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px; 
+        }
+
+        /* About us CSS */
+        .about-us {
+            color: #80aa91; /* About us text font colour */
+            padding: 30px 10px;
+            background-color: rgb(207, 247, 255); /* About us background box colour */
+        }
+
+        .about-content {
+            display: flex;
+            color: #80aa91;
+            justify-content: center;
+            align-items: center;
+            gap: 20px; 
+            flex-wrap: wrap; /* Allow wrapping for smaller screens */
+        }
+
+        .image img {
+            max-width: 100%; /* Make the image responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        .text {
+            max-width: 600px;
+            text-align: center;
+        }
+
+        /* Responsive Design - Media Queries */
+        @media (max-width: 768px) {
+            .banner {
+                font-size: 2rem;
+                height: 25vh; /* Adjust height for smaller screens */
+            }
+
+            .Navbar a {
+                padding: 10px;
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner {
+                font-size: 1.5rem;
+                height: 20vh; /* Further adjust height for mobile */
+            }
+
+            .Navbar {
+                flex-direction: column; /* Stack nav items vertically */
+            }
+
+            .Navbar a {
+                padding: 8px;
+                font-size: 0.875rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">
+        <h1></h1> <!-- Optional: Add a title or text to the banner -->
+    </div>
+
+    <nav>
+        <div class="Navbar">
+            <a class="Easy" href="Easy.html">Easy</a>
+            <a class="Medium" href="Medium.html">Medium</a>  
+            <a class="Expert" href="Hard.html">Expert</a>
+        </div>    
+    </nav>
+
+    <section class="whatisit">
+        <h2>What is Origami?</h2>
+        <div class="about-content">
+            <div class="text">
+                <p>Origami is the traditional Japanese art of paper folding. The goal is to transform a flat sheet of paper into a finished sculpture through folding techniques, without cutting or gluing. It can range from simple designs, like paper cranes or boats, to complex and intricate models. The practice often involves a lot of precision and creativity, and it's appreciated both as an art form and as a way to develop spatial reasoning skills.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-us">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="image">
+                <img src="/Users/cristalmiranda/Desktop/Tech/Paperdreamslogo.png" alt="Paper Dreams">
+            </div>
+            <div class="text">
+                <p>Paper Dreams was developed to support individuals at various skill levels in mastering the art of origami. It offers a platform where users can experiment and craft their designs without constraints, promoting an environment where creativity can flourish. The tool provides resources and guidance to help users progress from basic to advanced techniques, enabling them to fully explore and express their artistic potential in paper folding.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Easy</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+            text-align: center;
+            color: #ffffff;
+            font-size: 130%;
+            background-color: rgb(207, 247, 255); /* Website main background colour */
+        }
+
+        /* Banner CSS */
+        .banner {
+            background-image: url('paperdreams.jpeg'); /* Path to your banner image */
+            background-size: contain; /* Ensure the image covers the entire div without cutting it */
+            background-position: center; /* Center the image */
+            height: 200px; /* Adjust the height as needed */
+            color: #ffffff; /* Text color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px; /* Adjust the font size as needed */
+            width: 100%;
+        }
+
+        /* Nav Bar CSS */
+        nav {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .Navbar {
+            display: flex; 
+            justify-content: center;
+            overflow: hidden;
+            background-color: rgb(178, 227, 238); /* Nav bar color */
+        }
+
+        .Navbar a {
+            float: left;
+            color: #80aa91; /* Button text color */
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .Navbar a:hover {
+            background-color: #befcfa; /* Hover color */
+            color: rgb(255, 255, 255); /* Text color on hover */
+        }
+
+        /* Tutorial Step CSS */
+        .tutorial-step {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .step-image {
+            width: 60%; /* Adjust to a smaller size */
+            max-width: 400px; /* Sets a maximum width */
+            border: 2px solid #80aa91;
+            border-radius: 10px;
+            object-fit: cover;
+            margin: 0 auto; /* Center the image */
+        }
+
+        .step-title {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .step-text {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #555;
+        }
+            /* Responsive Design - Media Queries */
+            @media (max-width: 768px) {
+            .banner {
+                font-size: 2rem;
+                height: 25vh;
+            }
+
+            .Navbar a {
+                padding: 10px;
+                font-size: 1rem;
+            }
+
+            .step-title {
+                font-size: 1.25rem;
+            }
+
+            .step-text {
+                font-size: 1rem;
+            }
+
+            .step-image {
+                width: 80%; /* Reduce image size on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner {
+                font-size: 1.5rem;
+                height: 20vh;
+            }
+
+            .Navbar {
+                flex-direction: column;
+            }
+
+            .Navbar a {
+                padding: 8px;
+                font-size: 0.875rem;
+            }
+
+            .step-title {
+                font-size: 1rem;
+            }
+
+            .step-text {
+                font-size: 0.875rem;
+            }
+
+            .step-image {
+                width: 100%; /* Ensure image fits in smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Banner -->
+    <div class="banner">
+        Origami Tutorials
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="Navbar">
+            <a class="Home" href="Media.html">Home</a>
+            <a class="Easy" href="Easy.html">Easy</a>
+            <a class="Medium" href="Medium.html">Medium</a>
+            <a class="Expert" href="Hard.html">Expert</a>
+        </div>
+    </nav>
+
+    <!-- Origami Tutorial Content -->
+
+    <!-- Step 1 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 1:Top left</div>
+        <img class="step-image" src="E3S1.png" alt="Step 1 Image">
+        <div class="step-text">
+            Begin with a triangle-shaped piece of paper. Fold the top edge down, making a small loop (which will be part of the bird's head or neck).
+        </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 2:Top middle</div>
+        <img class="step-image" src="E3S2.png" alt="Step 2 Image">
+        <div class="step-text">
+            Fold the paper in half along the dashed line, bringing the right side over to the left. You now have a smaller triangle.
+        </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 3: Top right</div>
+        <img class="step-image" src="E3S3.png" alt="Step 3 Image">
+        <div class="step-text">
+            Fold one of the triangle's sides upwards to form an angle, creating what looks like a bird's head or neck. The tip should be pointing upwards.
+        </div>
+    </div>
+     <!-- Step 3 -->
+     <div class="tutorial-step">
+      <div class="step-title">Step 4: Bottom middle</div>
+      <img class="step-image" src="E3S4.png" alt="Step 3 Image">
+      <div class="step-text">
+        Fold the two lower sections outward in opposite directions to make what could be the bird's wings.
+      </div>
+  </div>
+   <!-- Step 3 -->
+   <div class="tutorial-step">
+    <div class="step-title">Step 5: Create Creases</div>
+    <img class="step-image" src="E3S5.png" alt="Step 3 Image">
+    <div class="step-text">
+        Adjust the head or neck of the bird by bending the tip downwards slightly.
+    </div>
+</div>
+
+</body>
+</html>

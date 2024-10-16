@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body { 
+            text-align: center;
+            color: #333;
+            font-size: 18px;
+            background-color: rgb(207, 247, 255); /* Website main background color */
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        /* Banner CSS */
+        .banner {
+            background-image: url('paperdreams.jpeg'); /* Path to your banner image */
+            background-size: cover; /* Ensure the image covers the entire div */
+            background-position: center;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 36px;
+            font-weight: bold;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Adds text shadow */
+        }
+
+        /* Nav Bar CSS */
+        nav {
+            margin: 0;
+        }
+  
+        .Navbar {
+            display: flex; 
+            justify-content: center;
+            overflow: hidden;
+            background-color: rgb(178, 227, 238);  /* Nav bar color */
+        }
+  
+        .Navbar a {
+            color: #80aa91;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+  
+        .Navbar a:hover {
+            background-color: #befcfa;
+            color: #fff;
+        }
+
+        /* Tutorial Step CSS */
+        .tutorial-step {
+            margin: 30px auto;
+            width: 90%;
+            max-width: 800px;
+            text-align: left;
+        }
+
+        .step-image {
+            width: 100%;
+            border: 2px solid #80aa91;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .step-text {
+            margin-top: 10px;
+            font-size: 20px;
+            color: #555;
+        }
+
+        .step-title {
+            font-size: 24px;
+            margin-top: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Step Navigation Buttons */
+        .step-navigation {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .nav-button {
+            background-color: #80aa91;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .nav-button:hover {
+            background-color: #befcfa;
+        }
+        .step-image {
+    width: 60%; /* Adjust to a smaller size */
+    max-width: 400px; /* Sets a maximum width */
+    border: 2px solid #80aa91;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 auto; /* Center the image */
+}
+
+    /* Responsive Design - Media Queries */
+    @media (max-width: 768px) {
+            .banner {
+                font-size: 2rem;
+                height: 25vh;
+            }
+
+            .Navbar a {
+                padding: 10px;
+                font-size: 1rem;
+            }
+
+            .step-title {
+                font-size: 1.25rem;
+            }
+
+            .step-text {
+                font-size: 1rem;
+            }
+
+            .step-image {
+                width: 80%; /* Reduce image size on mobile */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .banner {
+                font-size: 1.5rem;
+                height: 20vh;
+            }
+
+            .Navbar {
+                flex-direction: column;
+            }
+
+            .Navbar a {
+                padding: 8px;
+                font-size: 0.875rem;
+            }
+
+            .step-title {
+                font-size: 1rem;
+            }
+
+            .step-text {
+                font-size: 0.875rem;
+            }
+
+            .step-image {
+                width: 100%; /* Ensure image fits in smaller screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Banner -->
+    <div class="banner">
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <div class="Navbar">
+            <a class="Home" href="Media.html">Home</a>
+            <a class="Easy" href="Easy.html">Easy</a>
+            <a class="Medium" href="Medium.html">Medium</a>
+            <a class="Expert" href="Hard.html">Expert</a>
+        </div>
+    </nav>
+
+    <!-- Origami Tutorial Content -->
+
+    <!-- Step 1 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 1:Make a Square </div>
+        <img class="step-image" src="E2S1.png" alt="Step 1 Image">
+        <div class="step-text">
+            Begin with a rectangular sheet of paper. Fold one corner over to form a triangle, then cut off the excess at the bottom to create a perfect square.
+
+        </div>
+    </div>
+
+    <!-- Step 2 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 2: Diagonal Folds</div>
+        <img class="step-image" src="E2S2.png" alt="Step 2 Image">
+        <div class="step-text">
+            Open up your square and fold it so that two opposite corners meet at the center, forming a triangle. Crease well.
+        </div>
+    </div>
+
+    <!-- Step 3 -->
+    <div class="tutorial-step">
+        <div class="step-title">Step 3: Grid Creation</div>
+        <img class="step-image" src="E2S3.png" alt="Step 3 Image">
+        <div class="step-text">
+            Unfold your square completely to reveal a set of diagonal creases in a diamond-like pattern.
+        </div>
+    </div>
+   
+    <!-- Step 4 -->
+     <div class="tutorial-step">
+        <div class="step-title">Step 4: Rotate and Repeat</div>
+        <img class="step-image" src="E2S4.png" alt="Step 4 Image">
+        <div class="step-text">
+            Rotate the square 90 degrees and fold it in half horizontally to create another diagonal crease. Crease well and unfold.
+        </div>
+    </div>
+
+     <!-- Step 5 -->
+     <div class="tutorial-step">
+        <div class="step-title">Step 5: Fold Opposite Corners</div>
+        <img class="step-image" src="E2S5.png" alt="Step 5 Image">
+        <div class="step-text">
+            Fold the two other opposite corners into the center crease, just like in Step 2, forming another diamond shape.
+        </div>
+    </div>
+    
+    <!-- Step 6 -->
+     <div class="tutorial-step">
+        <div class="step-title">Step 6: Fold to the Center Again</div>
+        <img class="step-image" src="E2S6.png" alt="Step 6 Image">
+        <div class="step-text">
+            Fold both outer edges of the diamond into the center, repeating the same steps as earlier to form the same long diamond shape. Crease well and unfold.
+        </div>
+    </div>
+      <!-- Step 7 -->
+      <div class="tutorial-step">
+        <div class="step-title">Step 7: Fold to the Center Again</div>
+        <img class="step-image" src="E2S7.png" alt="Step 6 Image">
+        <div class="step-text">
+            Fold both outer edges of the diamond into the center, repeating the same steps as earlier to form the same long diamond shape. Crease well and unfold.
+        </div>
+    </div>
+      <!-- Step 8 -->
+      <div class="tutorial-step">
+        <div class="step-title">Step 8: Unfold and Admire</div>
+        <img class="step-image" src="E2S8.png" alt="Step 6 Image">
+        <div class="step-text">
+            Open up your square once more to reveal a well-defined grid of creases.
+        </div>
+    </div>
+      <!-- Step 9 -->
+      <div class="tutorial-step">
+        <div class="step-title">Step 9: Cut Along the Lines</div>
+        <img class="step-image" src="E2S9.png" alt="Step 6 Image">
+        <div class="step-text">
+            Cut along the lines as shown in the diagram. These will help shape the box.
+        </div>
+    </div>
+      <!-- Step 10 -->
+      <div class="tutorial-step">
+        <div class="step-title">Step 10:Glue the Flaps</div>
+        <img class="step-image" src="E2S10.png" alt="Step 6 Image">
+        <div class="step-text">
+            Add glue to the marked areas of the flaps as shown in the diagram. This will help hold the sides of the box together.
+        </div>
+    </div>
+      <!-- Step 11 -->
+      <div class="tutorial-step">
+        <div class="step-title">Step 11: Fold the Flaps Up</div>
+        <img class="step-image" src="E2S11.png" alt="Step 6 Image">
+        <div class="step-text">
+            Fold the flaps up toward the center to start forming the box’s sides. Make sure the glued areas stick well.
+        </div>
+    </div>
+      <!-- Step 12 -->
+      <div class="tutorial-step">
+        <div class="step-title">Step 12:Form the Box</div>
+        <img class="step-image" src="E2S12.png" alt="Step 6 Image">
+        <div class="step-text">
+            Fold the sides inward and shape them into a box. Press down gently to secure the glued parts.
+        </div>
+          <!-- Step 13 -->
+     <div class="tutorial-step">
+        <div class="step-title">Step 13: More Glue for Security</div>
+        <img class="step-image" src="E2S13.png" alt="Step 6 Image">
+        <div class="step-text">
+            Add some more glue along the edges to reinforce the box, ensuring it holds its shape.
+        </div>
+    </div>  <!-- Step 14 -->
+    <div class="tutorial-step">
+       <div class="step-title">Step 14: Final Folding</div>
+       <img class="step-image" src="E2S14.png" alt="Step 6 Image">
+       <div class="step-text">
+        Fold in the last flaps to form the box's final shape. Smooth out the folds, ensuring everything is aligned properly..
+           
+       </div>
+   </div>
+    </div>
+</body>
+</html>
